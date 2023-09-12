@@ -25,13 +25,13 @@ function typeText(element, text) {
 
     let interval = setInterval(() => {
         if (index < text.length) {
-            element.innerHTML += text.charAt(index)
-            index++
+            element.innerHTML += text.charAt(index);
+            index++;
         } else {
-            clearInterval(interval)
+            clearInterval(interval);
         }
     }, 20)
-}
+};
 
 // generate unique ID for each message div of bot
 // necessary for typing text effect for that specific reply
